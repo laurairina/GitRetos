@@ -1,0 +1,13 @@
+"use strict";
+exports.__esModule = true;
+var punto_1 = require("./punto");
+var punto1 = new punto_1.Punto(10, 15);
+var punto2 = new punto_1.Punto(7, 10);
+var punto3 = new punto_1.Punto(13, 20);
+console.log(punto1.toString());
+console.log(punto2.toString());
+console.log(punto3.toString());
+console.log("La distancia calculada al origen es: " + punto1.distanciaAlOrigen());
+console.log("La distancia entre puntos: " + punto1.calcularDistancia(punto2));
+var arrayPuntos = [punto2, punto3];
+console.log(punto1.calcularMasCercano(arrayPuntos));
