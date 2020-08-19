@@ -20,7 +20,7 @@ export class Mobile{
    }
 
   public toString(){
-      return this.name+ " "+ this.modelo+ "  "+ this.trademark+" "+this.sdSize+" "+this.color+" "+this.is5G+" "+this.camaraNumber+" "+this.price;
+      return this.name+ ", "+ this.modelo+ ", "+ this.trademark+", "+this.sdSize+", "+this.color+", "+this.is5G+", "+this.camaraNumber+", "+this.price;
   }
 
   public setName(name:string){

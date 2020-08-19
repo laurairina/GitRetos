@@ -13,7 +13,7 @@ var Mobile = /** @class */ (function () {
         this.price = price;
     }
     Mobile.prototype.toString = function () {
-        return this.name + " " + this.modelo + "  " + this.trademark + " " + this.sdSize + " " + this.color + " " + this.is5G + " " + this.camaraNumber + " " + this.price;
+        return this.name + ", " + this.modelo + ", " + this.trademark + ", " + this.sdSize + ", " + this.color + ", " + this.is5G + ", " + this.camaraNumber + ", " + this.price;
     };
     Mobile.prototype.setName = function (name) {
         this.name = name;
