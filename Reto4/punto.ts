@@ -63,10 +63,10 @@ export class Punto{
    
    public calcularMasCercano(puntos:Punto[]):Punto{
       let puntoMenor:Punto;
-      let menor:number=999999;
+      let menor:number= Number.MAX_VALUE ; 
       for(let i=0; i<puntos.length;i++){
           let resultado=this.calcularDistancia(puntos[i]);
-          console.log(resultado+"  "+puntos.length);
+          console.log(resultado +"  "+puntos[i].toString());
           if(menor>resultado){
                menor=resultado;
                puntoMenor=puntos[i];

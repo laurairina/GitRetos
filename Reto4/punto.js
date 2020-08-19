@@ -23,12 +23,12 @@ var Punto = /** @class */ (function () {
     };
     Punto.prototype.distanciaAlOrigen = function () {
         var distanciaOrigen = 0;
-        distanciaOrigen = Math.sqrt(Math.pow(this.getX(), 2) + Math.pow(this.getY(), 2));
+        distanciaOrigen = Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2));
         return distanciaOrigen;
     };
     Punto.prototype.calcularDistancia = function (otroPunto) {
         var distancia = 0;
-        distancia = Math.sqrt((Math.pow((this.getX() - otroPunto.getX()), 2)) + (Math.pow((this.getY() - otroPunto.getY()), 2)));
+        distancia = Math.sqrt((Math.pow((this.x - otroPunto.getX()), 2)) + (Math.pow((this.y - otroPunto.getY()), 2)));
         return distancia;
     };
     Punto.prototype.calcularCuadrante = function () {
@@ -52,10 +52,10 @@ var Punto = /** @class */ (function () {
     };
     Punto.prototype.calcularMasCercano = function (puntos) {
         var puntoMenor;
-        var menor = 999999;
+        var menor = Number.MAX_VALUE;
         for (var i = 0; i < puntos.length; i++) {
             var resultado = this.calcularDistancia(puntos[i]);
-            console.log(resultado + "  " + puntos.length);
+            console.log(resultado + "  " + puntos[i].toString());
             if (menor > resultado) {
                 menor = resultado;
                 puntoMenor = puntos[i];
