@@ -29,14 +29,14 @@ export class Punto{
 
    public distanciaAlOrigen():number{
        let distanciaOrigen:number=0;
-        distanciaOrigen= Math.sqrt(Math.pow(this.getX(),2)+Math.pow(this.getY(),2));
+        distanciaOrigen= Math.sqrt(Math.pow(this.x,2)+Math.pow(this.y,2));
 
        return distanciaOrigen;
    }
 
    public calcularDistancia(otroPunto:Punto):number{
        let distancia:number=0;
-       distancia=Math.sqrt((Math.pow((this.getX()-otroPunto.getX()),2))+(Math.pow((this.getY()-otroPunto.getY()),2)));
+       distancia=Math.sqrt((Math.pow((this.x - otroPunto.getX()),2))+(Math.pow((this.y - otroPunto.getY()),2)));
        return distancia;
    }
  
