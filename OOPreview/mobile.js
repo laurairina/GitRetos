@@ -64,7 +64,7 @@ var Mobile = /** @class */ (function () {
         return this.price;
     };
     Mobile.prototype.imprimirCaracteristicas = function () {
-        return "\n\tThe characteristics of the mobile name are: \n" + "\t Name: " + this.name + "\n\t Model: " + this.modelo + "\n\t Trademark: " + this.trademark + "\n\t SD Size (GB): " + this.sdSize + "\n\t Color: " + this.color + "\n\t Is 5G?: " + this.is5G + "\n\t Number of Cameras: " + this.camaraNumber;
+        return "\n\t\"The characteristics of the mobile name are: \"\n" + "\t Name: " + this.name + "\n\t Model: " + this.modelo + "\n\t Trademark: " + this.trademark + "\n\t SD Size (GB): " + this.sdSize + "\n\t Color: " + this.color + "\n\t Is 5G?: " + this.is5G + "\n\t Number of Cameras: " + this.camaraNumber;
     };
     return Mobile;
 }());

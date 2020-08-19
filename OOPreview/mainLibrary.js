@@ -12,3 +12,4 @@ console.log("\nMostrar lo que tiene en el array");
 library.getMobiles().forEach(function (element) {
     console.log(element.toString());
 });
+library.printLibrary();
