@@ -7,3 +7,13 @@ let samsumg= new Mobile("Samsung Galaxy 10","10","Samsung",5,"Rojo",true,12,525)
 console.log(nokia3210.toString());
 console.log(iphone3G.toString());
 console.log(samsumg.toString());
+
+console.log(nokia3210.imprimirCaracteristicas());
+console.log(iphone3G.imprimirCaracteristicas());
+console.log(samsumg.imprimirCaracteristicas());
+
+console.log("\nMostrar lo que tiene en el array");
+let arrayMobiles=[nokia3210, iphone3G, samsumg];
+arrayMobiles.forEach(element => {
+    console.log(element.imprimirCaracteristicas());
+});
