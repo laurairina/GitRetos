@@ -23,17 +23,23 @@ console.log(arrayInvertido(array));
 //----------------------------------
 function coloresArcoiris(colores) {
     var arcoiris = ["rojo", "naranja", "amarillo", "verde", "cian", "azul", "violeta"];
-    var _loop_1 = function (i) {
-        arcoiris.forEach(function (element) {
-            if (element == colores[i]) {
-                console.log(colores[i]);
-            }
-        });
-    };
     for (var i = 0; i < colores.length; i++) {
-        _loop_1(i);
+        var mensaje = "";
+        var c = 0;
+        var encontro = void 0;
+        while (c < arcoiris.length && !encontro) {
+            if (arcoiris[c] == colores[i]) {
+                encontro = true;
+                mensaje = "El color " + colores[i] + " esta en el arcoiris";
+            }
+            else {
+                mensaje = "El color " + colores[i] + " no está en el arcoiris";
+            }
+            c++;
+        }
+        console.log(mensaje);
     }
 }
 var arrayColores = ["morado", "amarillo", "blanco", "rojo", "negro"];
-console.log("\nPregunta 5: Colores de arcoiris ");
+console.log("\nPregunta 5: Colores de arcoiris \n");
 coloresArcoiris(arrayColores);

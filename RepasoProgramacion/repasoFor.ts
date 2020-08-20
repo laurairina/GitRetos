@@ -31,16 +31,27 @@ function arrayInvertido(array:number[]):number[]{
 function coloresArcoiris(colores:String[]){
     let arcoiris=["rojo","naranja","amarillo","verde","cian","azul","violeta"];
     for(let i=0; i<colores.length;i++){
-       arcoiris.forEach(element=>{
-           if(element==colores[i]){
-               console.log(colores[i]);
+        let mensaje:string="";
+        let c:number=0;
+        let encontro:boolean;
+
+        while(c<arcoiris.length && !encontro){
+           if(arcoiris[c] == colores[i]){
+               encontro=true;
+               mensaje="El color "+colores[i]+" esta en el arcoiris";
            }
-       });
+           else{
+            mensaje="El color "+colores[i]+" no está en el arcoiris";
+           }
+           c++;
+       }
+       console.log(mensaje);
+
     }
   
   }
   let arrayColores=["morado","amarillo","blanco","rojo","negro"];
-  console.log("\nPregunta 5: Colores de arcoiris ");
+  console.log("\nPregunta 5: Colores de arcoiris \n");
   coloresArcoiris(arrayColores);
 
  
